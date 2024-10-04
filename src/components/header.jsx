@@ -1,41 +1,42 @@
 import {Link} from 'react-router-dom';
 import logo from '../assets/darkskullz9-website-logo.svg'
+import '../styles/header.css'
 
 const Header = () => {
     return (
-        <header className='flex flex-row justify-between items-center py-4 px-8 bg-darkpurple text-periwinkle'>
+        <header className='header flex justify-between items-center py-4 px-8 bg-darkpurple text-periwinkle'>
             <Link to="/">
                 <img
-                    className='w-32 h-auto'
+                    className='website-logo w-32 h-auto'
                     src={logo}
                     alt='Darkskullz9 Website logo'
                 />
             </Link>
 
-            <nav className='flex space-x-8'>
+            <nav>
                 <Link
-                    className='hover:text-majorelleblue transition duration-200'
+                    className='pageLink'
                     to="/"
                 >
                     Home
                 </Link>
 
                 <Link
-                    className='hover:text-majorelleblue transition duration-200'
+                    className='pageLink'
                     to="/music"
                 >
                     Music
                 </Link>
 
                 <Link 
-                    className='hover:text-majorelleblue transition duration-200'
+                    className='pageLink'
                     to="/gaming"
                 >
                     Gaming
                 </Link>
 
                 <Link
-                    className='hover:text-majorelleblue transition duration-200'
+                    className='pageLink'
                     to="/about"
                 >
                     About

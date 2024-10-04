@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../assets/Mona-Sans.ttf') format('truetype');
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'MonaSans';
+    font-stretch: expanded;
+    font-weight: 600;
+    background-color: #ccccea;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+header .website-logo {
+    width: 12rem;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+nav a {
+    color: #1d1128;
+    font-stretch: expanded;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6e54ff;
+    transition: 300ms ease;
+}

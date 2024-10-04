@@ -1,6 +1,8 @@
 const Music = () => {
     return(
-        <div className="music"></div>
+        <>
+            
+        </>
     );
 };
 
